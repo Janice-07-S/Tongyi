@@ -1,0 +1,6 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --toastify-color-light: #fff;
+}
