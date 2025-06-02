@@ -31,7 +31,7 @@ export default {
 #ice-container {
   overflow: hidden;
   transition: all 0.4s ease;
-  width: 100%;
+  width: 100vw;
 }
 
 .layout-bj {
@@ -47,20 +47,19 @@ export default {
 
 
 .layout-nav {
-  align-items: center;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   height: 100%;
-  justify-content: space-between;
+
   overflow: hidden;
-  padding-top: 24px;
+  padding-top: 35px;
   position: relative;
   width: 72px;
 }
 
 .layout-content {
- background-color: #f7f8fc;
+ background-color:#ffffff;
   display: flex;
   overflow: hidden;
   position: relative;

@@ -20,7 +20,6 @@ export default {
 
 <template>
   <div class="chat-window">
-    <history/>
     <chat-content/>
 <!--    <div class="chat-header">-->
 
@@ -43,8 +42,7 @@ export default {
   flex-direction: row;
   height: 100%;
   width: 100%;
-
-  background-color: #f7f8fc;
+  background-color: #ffffff;
   display: flex;
   overflow: hidden;
 }

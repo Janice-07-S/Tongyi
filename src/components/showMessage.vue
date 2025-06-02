@@ -14,7 +14,7 @@ export default {
 
 <template>
   <div class="contentMessagebj">
-<!--    <div class="messageFolder">-->
+    <div class="messageFolder">
       <div class="prompt">
         <img class="logo-01"
              src="https://img.alicdn.com/imgextra/i4/O1CN01EfJVFQ1uZPd7W4W6i_!!6000000006051-2-tps-112-112.png"
@@ -29,27 +29,26 @@ export default {
         <div class="funcommon1 f2 funCommoneffect"><functionSelect2/></div>
         <div class="funcommon1 f3 funCommoneffect"><functionSelect3/></div>
       </div>
-<!--    </div>-->
+    </div>
   </div>
 </template>
 
 <style>
 .contentMessagebj{
   flex:1;
-  width: 756px;
+  width:100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   overflow: auto;
-  background-color: white;
 }
 .messageFolder {
-  flex: 1;
-  width: 100%;
+  width: 872px;
+  height: 308px;
   height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
+  overflow: hidden;
 }
 
 .prompt {
