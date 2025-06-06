@@ -1,0 +1,29 @@
+.chat-container {
+    width: 300px; /* 或者任何你想要的宽度 */
+    margin: auto;
+}
+
+.toggle-btn {
+    display: block;
+    padding: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    text-align: left;
+}
+
+#toggle-chat {
+    display: none; /* 隐藏复选框 */
+}
+
+.chat-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+}
+
+/* 当复选框被选中时改变.chat-content的max-height */
+#toggle-chat:checked ~ .chat-content {
+    max-height: 400px; /* 根据需要调整 */
+}

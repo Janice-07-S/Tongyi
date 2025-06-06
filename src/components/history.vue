@@ -22,6 +22,7 @@ export default {
   width: 260px;
   position: relative;
   transition:width 0.4S ;
+
 }
 .historyBj{
   display: flex;

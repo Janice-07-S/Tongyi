@@ -27,7 +27,7 @@ export default {
       <div class="functionSelect">
         <div class="funcommon1 f1 funCommoneffect"><functionSelect1/></div>
         <div class="funcommon1 f2 funCommoneffect"><functionSelect2/></div>
-        <div class="funcommon1 f3 funCommoneffect"><functionSelect3/></div>
+        <div class="funcommon2 f3 funCommoneffect"><functionSelect3/></div>
       </div>
     </div>
   </div>
@@ -86,6 +86,15 @@ export default {
   opacity: 1;
   overflow: hidden;
   padding: 16px;
+  width: auto;
+}
+.funcommon2{
+  border: 1px solid #fff;
+  border-radius: 16px;
+  box-sizing: border-box;
+  height: 192px;
+  opacity: 1;
+  overflow: hidden;
   width: auto;
 }
 

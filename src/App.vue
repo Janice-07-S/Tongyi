@@ -1,9 +1,11 @@
 <script>
 import content from "@/components/content.vue";
 import navTab from "@/components/navTab.vue";
+import history from "@/components/history.vue";
 
 export default {
   components: {
+    history,
     navTab,
     content
   }
@@ -43,7 +45,6 @@ export default {
   height: 100%;
   background: slateblue;
 }
-
 
 
 .layout-nav {

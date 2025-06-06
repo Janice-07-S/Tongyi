@@ -7,7 +7,7 @@ export default {
   data() {
     return {
       newMessage: '',
-      showMessage:'',
+      showMessage: '',
     }
   },
   methods: {
@@ -19,25 +19,23 @@ export default {
 </script>
 
 <template>
+  <div class="layout-history">
+    <div>
+    <history/>
+    </div>
+    <span class="fun-button">
+    </span>
+  </div>
   <div class="chat-window">
     <chat-content/>
-<!--    <div class="chat-header">-->
-
-<!--    </div>-->
-<!--    <div class="chat-content">-->
-<!--      <div id="showMessage" class="content">-->
-<!--        {{ showMessage }}-->
-<!--      </div>-->
-<!--    </div>-->
-
-<!--    <div class="chat-input">-->
-<!--      <input class="input" type="text" v-model="newMessage" placeholder="输入消息...">-->
-<!--      <button class="button" @click="sendMessage">发送</button>-->
-<!--    </div>-->
   </div>
 </template>
 
 <style>
+.layout-history{
+  display: flex;
+  flex-direction: row;
+}
 .chat-window {
   flex-direction: row;
   height: 100%;
@@ -47,37 +45,22 @@ export default {
   overflow: hidden;
 }
 
-.chat-content {
+.fun-button {
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  transform: translate(0px, -22px) rotateY(0deg);
+  width: 22px;
+  height: 44px;
   display: flex;
-  flex-grow: 1;
-  padding: 10px;
-}
-.content{
-  flex:1;
-  background:white;
-  overflow: auto;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 11;
 }
 
-
-
-
-.input {
-  border-style: none;
-  outline: none;
-  flex-grow: 8;
-  font-size: 25px;
-
+.fun-button svg {
+  fill: var(#c8cad9);
 }
-
-.button {
-  border: none;
-  font-size: 12px;
-  font-weight: bold;
-  width: 50px;
-  border-radius: 50%;
-  background: #999999;
-  color: white;
-}
-
 
 </style>
