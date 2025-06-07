@@ -68,6 +68,7 @@ export default {
   border-radius: 12px;
   flex:1;
   margin: 8px 8px 8px 0;
+  align-items: center;
 }
 
 </style>

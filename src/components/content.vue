@@ -8,24 +8,30 @@ export default {
     return {
       newMessage: '',
       showMessage: '',
+      isHistoryVisible:true,
     }
   },
   methods: {
     sendMessage() {
       this.showMessage = this.newMessage;
+    },
+    toggleContent(){
+this.isHistoryVisible = !this.isHistoryVisible;
     }
   }
 }
 </script>
 
 <template>
-  <div class="layout-history">
+  <div class="layout-history" :class="{collapsed: !isHistoryVisible}" v-show="isHistoryVisible">
     <div>
     <history/>
     </div>
-    <span class="fun-button">
-    </span>
   </div>
+  <button class="fun-button" @click="toggleContent">
+    <span>{{ isHistoryVisible ? '<' : '>'}}
+    </span>
+  </button>
   <div class="chat-window">
     <chat-content/>
   </div>
@@ -33,8 +39,14 @@ export default {
 
 <style>
 .layout-history{
+  height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  transition:width 0.4s ease;
+}
+.layout-history.collapsed{
+  width: 0;
+
 }
 .chat-window {
   flex-direction: row;
@@ -46,17 +58,16 @@ export default {
 }
 
 .fun-button {
-  position: absolute;
-  right: -22px;
-  top: 50%;
-  transform: translate(0px, -22px) rotateY(0deg);
+  background: #e0dfff;
   width: 22px;
   height: 44px;
-  display: flex;
+  display:inline;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   z-index: 11;
+  font-size: 24px;
+  border: none;
 }
 
 .fun-button svg {

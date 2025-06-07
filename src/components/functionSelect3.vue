@@ -6,25 +6,19 @@ export default {}
 <template>
   <div class="select3bj">
     <div class="card">
-      <div class="cardPage">
-        <div class="card1">
-          <div class="appButton">
-            <div class="fun3-logo">
-              <span class="text">x</span>
-            </div>
+      <div class="card1">
+        <div class="appButton">
+          <div class="fun3-logo">
+            <span class="text">x</span>
             <div class="fun3-text">
               <span class="text">体验Qwen3</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="cardPage">
-        <div class="card2">
-        </div>
+      <div class="card2">
       </div>
-      <div class="cardPage">
-        <div class="card3">
-        </div>
+      <div class="card3">
       </div>
     </div>
   </div>
@@ -46,16 +40,6 @@ export default {}
 * div {
   box-sizing: border-box;
 }
-
-.cardPage {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transition: opacity .4s ease, visibility .4s ease;
-  width: 100%;
-}
-
 
 
 .card1 {
@@ -112,46 +96,39 @@ export default {}
 
 .card2 {
   position: absolute;
-  left: 0;
-  top: 0;
   width: 216px;
   height: 190.667px;
-  background-image: url(vue-component-data/public/icon/p2.jpg);
+  background-image: url(../../public/icon/p2.jpg);
   background-size: contain;
   animation: slideAnimation 12s infinite;
   animation-delay: 4s;
+
 }
 
 .card3 {
   position: absolute;
-  left: 0;
-  top: 0;
   width: 216px;
   height: 190.667px;
-  background-image: url(vue-component-data/public/icon/p3.jpg);
+  background-image: url(../../public/icon/p3.jpg);
   background-size: contain;
   animation: slideAnimation 12s infinite;
   animation-delay: 8s;
 }
 
 @keyframes slideAnimation {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  5% {
+  0%{
     opacity: 1;
     visibility: visible;
   }
-  35% {
+  33%{
     opacity: 1;
     visibility: visible;
   }
-  40% {
+  34%{
     opacity: 0;
     visibility: hidden;
   }
-  100% {
+  100%{
     opacity: 0;
     visibility: hidden;
   }

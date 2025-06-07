@@ -9,6 +9,16 @@ components:{
   chatFunctionButton,
   showMessage,
   chatInput
+},
+  data(){
+  return{
+    isExpanded:false
+  }
+  },
+methods:{
+toggleContent(){
+  this.isExpanded = !this.isExpanded
+}
 }
 }
 </script>
@@ -23,7 +33,7 @@ components:{
 </div>
 </template>
 
-<style scoped>
+<style >
 .contentlayout{
   display: flex;
   flex: 1 1 0;
@@ -34,6 +44,7 @@ components:{
   background-color: #ffffff;
   align-items: center;
 }
+
 .header{
   width: 100%;
   height: 70px;
