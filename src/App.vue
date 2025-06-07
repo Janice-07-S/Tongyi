@@ -27,17 +27,13 @@ export default {
 
 <style>
 #ice-container {
-  height: 100vh;
-}
-
-#ice-container {
   overflow: hidden;
   transition: all 0.4s ease;
   width: 100vw;
+  height: 100vh;
 }
 
 .layout-bj {
-  align-items: stretch;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -65,6 +61,7 @@ export default {
   overflow: hidden;
   position: relative;
   width: 100%;
+  /*height: 100%;*/
   border-radius: 12px;
   flex:1;
   margin: 8px 8px 8px 0;

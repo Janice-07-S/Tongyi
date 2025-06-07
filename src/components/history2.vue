@@ -11,7 +11,7 @@ export default {}
 <style >
 .history-content{
   width: 100%;
-  height: 100%;
+  flex: 1;
   overflow: auto;
   background: #999999;
 }

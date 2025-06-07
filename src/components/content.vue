@@ -8,15 +8,15 @@ export default {
     return {
       newMessage: '',
       showMessage: '',
-      isHistoryVisible:true,
+      isHistoryVisible: true,
     }
   },
   methods: {
     sendMessage() {
       this.showMessage = this.newMessage;
     },
-    toggleContent(){
-this.isHistoryVisible = !this.isHistoryVisible;
+    toggleContent() {
+      this.isHistoryVisible = !this.isHistoryVisible;
     }
   }
 }
@@ -25,11 +25,11 @@ this.isHistoryVisible = !this.isHistoryVisible;
 <template>
   <div class="layout-history" :class="{collapsed: !isHistoryVisible}" v-show="isHistoryVisible">
     <div>
-    <history/>
+      <history/>
     </div>
   </div>
   <button class="fun-button" @click="toggleContent">
-    <span>{{ isHistoryVisible ? '<' : '>'}}
+    <span>{{ isHistoryVisible ? '<' : '>' }}
     </span>
   </button>
   <div class="chat-window">
@@ -38,16 +38,21 @@ this.isHistoryVisible = !this.isHistoryVisible;
 </template>
 
 <style>
-.layout-history{
+.layout-history {
+  width: 260px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  transition:width 0.4s ease;
+  transition: width 0.4s ease;
+  overflow: hidden;
+  position: relative;
 }
-.layout-history.collapsed{
+
+.layout-history.collapsed {
   width: 0;
 
 }
+
 .chat-window {
   flex-direction: row;
   height: 100%;
@@ -61,7 +66,7 @@ this.isHistoryVisible = !this.isHistoryVisible;
   background: #e0dfff;
   width: 22px;
   height: 44px;
-  display:inline;
+  display: inline;
   align-items: center;
   justify-content: center;
   cursor: pointer;

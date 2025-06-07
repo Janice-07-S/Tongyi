@@ -26,9 +26,9 @@ export default {
 </template>
 <style>
 .history-layout {
-  width: 260px;
+  width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
   transition: width 0.4S;
 
 }
@@ -41,11 +41,12 @@ export default {
   width: 260px;
   padding: 24px 0;
   justify-content: space-between;
+  position: relative;
 }
 
 .first {
-  width: 260px;
-  height: 24px;
+  width: 100%;
+  height: 60px;
   padding: 10px 0;
   display: flex;
   flex-direction: row;
@@ -54,15 +55,17 @@ export default {
 }
 
 .second {
-  width: 260px;
+  width: 100%;
   padding: 0 10px;
   flex: 1;
   justify-content: center;
+  background:#e0dfff;
 }
 
 .last {
+  background: #999999;
   width: 260px;
-  height: 24px;
+  height: 35px;
   border-top: 1px solid rgba(237, 239, 245, .45);
   padding: 10px 0;
   justify-content: center;
